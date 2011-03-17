@@ -1,0 +1,56 @@
+@charset "utf-8";
+img {
+	border-style: none;
+}
+
+a {
+	color: #F60;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #960;
+	text-decoration: none;
+}
+
+body {
+	background-image:url(/images/background.png)
+}
+
+.MainContainerOut {
+	width: 1000px;
+	height: 600px;
+}
+.corner {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: url(/images/corners.png) no-repeat;
+	font-size: 0%;
+}
+.MainContainer {
+	padding: 10px;
+}
+.TL {
+	top: 0;
+	left: 0;
+	background-position: 0 0;
+}
+.TR {
+	top: 0;
+	right: 0;
+	background-position: -10px 0;
+}
+.BL {
+	bottom: 0;
+	left: 0;
+	background-position: 0 -10px;
+}
+.BR {
+	bottom: 0;
+	right: 0;
+	background-position: -10px -10px;
+}
