@@ -6,11 +6,13 @@
 <title>World Traverller OnWeb - <?= $title ?></title>
 </head>
 
-<body>
+<body topmargin="0" marginheight="0">
+<div class="Header">Welcome to World Traveller OnWeb. Please login:
+</div>
+
+
+
+
+
 <div align="center">
-<div class="MainContainerOut">
-    <div class="corner TL"></div>
-    <div class="corner TR"></div>
-    <div class="corner BL"></div>
-    <div class="corner BR"></div>
-    <div class="MainContainer">
+<div align="center"  class="MainContainer">
