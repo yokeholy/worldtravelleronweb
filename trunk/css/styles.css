@@ -17,40 +17,43 @@ p {
 }
 
 body {
-	background-image:url(/images/background.png)
+	background-image:url(/images/background.png);
 }
 
-.MainContainerOut {
-	width: 1000px;
-	height: 600px;
-}
-.corner {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	background: url(/images/corners.png) no-repeat;
-	font-size: 0%;
-}
 .MainContainer {
+	margin-top:30px;
+	height:500px;
 	padding: 10px;
+	vertical-align: middle;
+	background-image: url(/images/logo_background.png);
+	width: 1000px;
+	border: 2px solid #FF0;
 }
-.TL {
-	top: 0;
-	left: 0;
-	background-position: 0 0;
+
+.Header {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px;
+	color:#fff;
+	text-align:center;
+	height:30px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#FC0;
+	width:100%;
+	vertical-align:bottom;
 }
-.TR {
-	top: 0;
-	right: 0;
-	background-position: -10px 0;
-}
-.BL {
-	bottom: 0;
-	left: 0;
-	background-position: 0 -10px;
-}
-.BR {
-	bottom: 0;
-	right: 0;
-	background-position: -10px -10px;
+
+.Footer {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px;
+	color:#666;
+	text-align:center;
+	height:20px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background-color:#999;
+	width:100%;
+	vertical-align:bottom;
 }
