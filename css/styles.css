@@ -20,9 +20,18 @@ body {
 	background-image:url(/images/background.png);
 }
 
+input {
+	height:10px;
+	font-size:9px;
+	color:#C90;
+	background:#EB0;
+	border:1px solid;
+}
+
 .MainContainer {
-	margin-top:30px;
-	height:500px;
+	margin-top:50px;
+	margin-bottom:30px;
+	height:530px;
 	padding: 10px;
 	vertical-align: middle;
 	background-image: url(/images/logo_background.png);
@@ -36,7 +45,7 @@ body {
 	color:#fff;
 	text-align:center;
 	height:30px;
-	position:absolute;
+	position:fixed;
 	top:0px;
 	left:0px;
 	background-color:#FC0;
@@ -50,7 +59,7 @@ body {
 	color:#666;
 	text-align:center;
 	height:20px;
-	position:absolute;
+	position:fixed;
 	bottom:0px;
 	left:0px;
 	background-color:#999;
