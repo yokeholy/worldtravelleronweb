@@ -1,11 +1,15 @@
 <?php 
 	session_start();
+require("{$_SERVER['DOCUMENT_ROOT']}/configure/db.php");
 
 if(!isset($_SESSION['logged'])){
 	$_SESSION['logged'] = false;
 }
 if(!isset($SKIPLOGINTEST)){
 	$SKIPLOGINTEST = false;
+}
+if(!isset($ADMINCHECK)){
+	$ADMINCHECK = false;
 }
 
 ?>
@@ -35,8 +39,16 @@ if(!isset($SKIPLOGINTEST)){
 </div>
 <div align="center"  class="MainContainer">
 
+
+
+
+
+
 <?php
-if ($SKIPLOGINTEST != true && $_SESSION['logged'] != true)
+if($ADMINCHECK == true && $_SESSION['adminlogged'] == true)
+{
+	echo ("<h2>Admin Mode</h2>");
+}else if ($SKIPLOGINTEST != true && $_SESSION['logged'] != true)
 {
 	?>
 	

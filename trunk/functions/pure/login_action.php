@@ -21,6 +21,9 @@ if(empty($UserInfo))
 	$_SESSION['NickName'] = $UserInfo['NickName'];
 
 	$_SESSION['logged'] = true;
+	
+	if($UserInfo['Type'] == 9)
+		$_SESSION['adminlogged'] = true;
 
 	header('Location: /main.php');
 	} else {
