@@ -16,6 +16,14 @@ p {
 	text-decoration: none;
 }
 
+h1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+	color:#F60;
+	margin:5px;
+	text-decoration:none;
+}
+
 body {
 	background-image:url(/images/background.png);
 }
@@ -29,13 +37,19 @@ input {
 }
 
 .MainContainer {
-	margin-top:50px;
 	margin-bottom:30px;
-	height:530px;
+	height:500px;
 	padding: 10px;
 	vertical-align: middle;
 	background-image: url(/images/logo_background.png);
+	width: 980px;
+	border: 2px solid #FF0;
+}
+.LocationHeading {
+	margin-top:50px;
+	height:30px;
 	width: 1000px;
+	background-color:#F90;
 	border: 2px solid #FF0;
 }
 
