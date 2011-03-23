@@ -1,7 +1,9 @@
 <?php 
-session_start();
-if(!$_SESSION['logged'] == 1)
-	$_SESSION['logged'] = 0;
+	session_start();
+
+if(!isset($_SESSION['logged'])){
+	$_SESSION['logged'] = false;
+}
 
 ?>
 
@@ -9,14 +11,14 @@ if(!$_SESSION['logged'] == 1)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-<title>World Traverller OnWeb - <?= $title ?></title>
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
+<title>World Traverller OnWeb - <?php echo $title ?></title>
 </head>
 
 <body topmargin="0" marginheight="0">
 <div class="Header">Welcome to World Traveller OnWeb. <br />
 
-<?php include('functions/login_box.php'); ?>
+<?php include("{$_SERVER['DOCUMENT_ROOT']}/functions/login_box.php"); ?>
 
 </div>
 
@@ -25,4 +27,21 @@ if(!$_SESSION['logged'] == 1)
 
 
 <div align="center">
+<div class="LocationHeading">
+<h1 style="color:#FFF"><?php echo $title ?></h1>
+</div>
 <div align="center"  class="MainContainer">
+
+<?php
+if (!(isset($SKIPLOGINTEST) && $SKIPLOGINTEST == true))
+{
+	?>
+	
+<p align="center">Please login before you start your World Traveller journey. :)</p>
+<p align="center">If you do not have an account with us, please CLICK HERE to register.</p>
+
+	<?php
+	include('footer.php');
+	exit();
+}
+?>
