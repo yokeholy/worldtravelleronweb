@@ -14,7 +14,7 @@ if(empty($UserInfo))
 } else {
 
 	
-	if($_POST['Password'] == $UserInfo['Password'])
+	if(md5($_POST['Password']) == $UserInfo['Password'])
 	{
 	
 	//start to set all values for the session
