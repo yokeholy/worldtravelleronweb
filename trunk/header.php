@@ -4,6 +4,9 @@
 if(!isset($_SESSION['logged'])){
 	$_SESSION['logged'] = false;
 }
+if(!isset($SKIPLOGINTEST)){
+	$SKIPLOGINTEST = false;
+}
 
 ?>
 
@@ -33,12 +36,12 @@ if(!isset($_SESSION['logged'])){
 <div align="center"  class="MainContainer">
 
 <?php
-if (!(isset($SKIPLOGINTEST) && $SKIPLOGINTEST == true))
+if ($SKIPLOGINTEST != true && $_SESSION['logged'] != true)
 {
 	?>
 	
-<p align="center">Please login before you start your World Traveller journey. :)</p>
-<p align="center">If you do not have an account with us, please CLICK HERE to register.</p>
+<p align="center" style="margin-top:150px">Please login before you start your World Traveller journey. :)</p>
+<p align="center">If you do not have an account with us, please <a href="/account/register.php">CLICK HERE</a> to register.</p>
 
 	<?php
 	include('footer.php');
