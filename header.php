@@ -5,6 +5,9 @@ require("{$_SERVER['DOCUMENT_ROOT']}/configure/db.php");
 if(!isset($_SESSION['logged'])){
 	$_SESSION['logged'] = false;
 }
+if(!isset($_SESSION['adminlogged'])){
+	$_SESSION['adminlogged'] = false;
+}
 if(!isset($SKIPLOGINTEST)){
 	$SKIPLOGINTEST = false;
 }
@@ -48,6 +51,11 @@ if(!isset($ADMINCHECK)){
 if($ADMINCHECK == true && $_SESSION['adminlogged'] == true)
 {
 	echo ("<h2>Admin Mode</h2>");
+}else if($ADMINCHECK == true && $_SESSION['adminlogged'] != true)
+{
+	echo ("<h2>Not Admin!!</h2>");
+	include('footer.php');
+	exit();
 }else if ($SKIPLOGINTEST != true && $_SESSION['logged'] != true)
 {
 	?>
