@@ -41,7 +41,7 @@ Level: <?php echo $UserInfo['Level']?> Exp: <?php echo $UserInfo['Exp'];?>/<?php
 			<td align="left"><p class="leftpanel_text">&nbsp;</p></td>
 		</tr>
 		<tr>
-			<td align="left"><p class="leftpanel_text">&nbsp;</p></td>
+			<td align="left"><p class="leftpanel_text"><strong>Status:</strong></p></td>
 			<td align="left"><p class="leftpanel_text">&nbsp;</p></td>
 		</tr>
 	</table>
