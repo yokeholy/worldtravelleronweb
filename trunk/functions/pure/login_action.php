@@ -20,6 +20,7 @@ if(empty($UserInfo))
 	//start to set all values for the session
 	$_SESSION['NickName'] = $UserInfo['NickName'];
 	$_SESSION['Username'] = $UserInfo['Username'];
+	$_SESSION['Level'] = $UserInfo['Level'];
 	
 
 	$_SESSION['logged'] = true;

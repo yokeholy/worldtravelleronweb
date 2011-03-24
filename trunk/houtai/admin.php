@@ -1,6 +1,7 @@
 <?php
 $title = "Administration Panel";
 $ADMINCHECK = true;
+$NOLEFTPANEL = true;
 include("{$_SERVER['DOCUMENT_ROOT']}/header.php")
 ?>
 

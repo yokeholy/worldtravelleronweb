@@ -127,6 +127,10 @@ input {
 	padding:0px;
 }
 
+.leftpanel_text {
+	color:#330;
+}
+
 .MainWindow {
 	position: relative;
 	left: 150px;
