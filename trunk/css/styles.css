@@ -64,18 +64,20 @@ input {
 .MainContainer {
 	margin-bottom:30px;
 	height:500px;
-	padding: 10px;
+	padding: 0px;
 	vertical-align: middle;
 	background-image: url(/images/logo_background.png);
-	width: 980px;
-	border: 2px solid #FF0;
+	width: 1000px;
+	border: 2px solid #500;
 }
+
 .LocationHeading {
 	margin-top:50px;
 	height:30px;
 	width: 1000px;
 	background-color:#F90;
-	border: 2px solid #FF0;
+	border: 2px solid #500;
+	border-bottom:0px;
 }
 
 .Header {
@@ -90,6 +92,7 @@ input {
 	background-color:#FC0;
 	width:100%;
 	vertical-align:bottom;
+	z-index:1;
 }
 
 .Footer {
@@ -104,4 +107,33 @@ input {
 	background-color:#999;
 	width:100%;
 	vertical-align:bottom;
+	z-index:1;
+}
+
+.leftpanel {
+	left:-350px;
+	top:0px;
+	position:relative;
+	height:500px;
+	background-image:url(/images/leftpanel_background.png);
+	width:298px;
+	border-right: 2px solid #500;
+}
+
+.leftpanel_box {
+	width:220px;
+	border: 1px solid #222;
+	margin:0px;
+	padding:0px;
+}
+
+.MainWindow {
+	position: relative;
+	left: 150px;
+	top: -500px;
+	width: 700px;
+	height: 500px;
+	border: 1px solid #500;
+	margin: 0px;
+	padding: 0px;
 }

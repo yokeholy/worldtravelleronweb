@@ -22,7 +22,7 @@ if(!isset($ADMINCHECK)){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/css/styles.css" rel="stylesheet" type="text/css">
-<title>World Traverller OnWeb - <?php echo $title ?></title>
+<title>World Traverller OnWeb</title>
 </head>
 
 <body topmargin="0" marginheight="0">
@@ -43,11 +43,20 @@ if(!isset($ADMINCHECK)){
 <div align="center"  class="MainContainer">
 
 
+<?php
+if(!isset($NOLEFTPANEL) || $NOLEFTPANEL != true)
+{
+	require("{$_SERVER['DOCUMENT_ROOT']}/functions/left_panel.php");
 
+?>
 
+<div class="MainWindow">
 
 
 <?php
+
+}
+
 if($ADMINCHECK == true && $_SESSION['adminlogged'] == true)
 {
 	echo ("<h2>Admin Mode</h2>");
